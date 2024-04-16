@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'idroid';
+    src: url(fonts/IDroid.otf) format(opentype);
+}
+
+:root {
+    --cor1: rgb(34, 87, 122);
+    --cor2: rgb(56, 163, 165);
+    --cor3: rgb(87, 204, 153);
+    --cor4: rgb(128, 237, 153);
+    --cor5: rgb(199, 249, 204);
+
+    --fonte-tit: 'Bebas Neue', cursive;
+    --fonte-droid:'idroid', sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--cor5);
+}
+header {
+    height: 200px;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1) 82%);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
+}
+
+header > h1 {
+    padding: 20px;
+    margin: auto;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
+    font-size: 2.5em;
+    font-family: var(--fonte-tit);
+    font-weight: lighter;
+    text-align: center;
+}
+
+header > p {
+    padding: 5px;
+    margin: auto;
+    max-width: 400px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#navheader {
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+#navheader > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    border-radius: 5px;
+}
+
+#navheader > a {
+    padding: 9px 8px;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: .5s; /*Ajusta duração da transição nos links do header*/
+}
+
+main {
+    background-color: white;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.397);;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    max-width: 80%;
+    min-width: 410px;
+    padding: 20px;
+}
+
+article > h1 {
+    font-size: 1.8em;
+    margin: 0px;
+    padding-bottom: 20px;
+    font-family: var(--fonte-droid);
+    font-weight: normal;
+    color: var(--cor1);
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, var(--cor3), white);
+    padding: 1px 10px;
+    font-family: var(--fonte-droid);
+    font-weight: normal;
+    color: var(--cor1);
+}
+
+article > p {
+    text-indent: 10px;
+    margin: 0px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8em;
+}
+
+.marcar {
+    font-weight: bold;
+    color: var(--cor1);
+}
+
+.linke {
+    font-weight: bold;
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+.linke::after {
+    content: "🔗";
+}
+
+picture > img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 800px;
+    min-width: 300px;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+picture > img#droid {
+    max-width: 400px;
+    min-width: 300px;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.video {
+    background-color: var(--cor1);
+    margin: 20px -20px; /*Cola as bordas horizontais da box nos horizontes da main*/
+    padding-bottom: 56.5%; /*Ajusta a altura da box, para que caiba o vídeo*/
+    position: relative; /*Posicionamento atual do elemento de divisão*/
+}
+
+.video > iframe {
+    position: absolute; /*Torna a div em que ele está como ponto de partida para seu posicionamento*/
+    top: 5%; /*Distância do topo para o vídeo*/
+    left: 5%; /*Distância da lateral esquerda para o vídeo*/
+    width: 90%; /*Lagura do vídeo relativo a largura da box*/
+    height: 90%; /*Altura do vídeo relativo a altura da box*/
+}
+
+aside {
+    background-color: var(--cor5);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.397);
+}
+
+aside > h3 {
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    background-color: var(--cor3);
+    color: white;
+    font-weight: bold;
+}
+
+aside > p {
+    text-indent: 10px;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: "✔️ ";
+}
+
+#listaum {
+    display: inline-block;
+    margin-left: -27px;
+    min-width: 252px;
+    width: 50%;
+}
+
+#listadois {
+    display: inline-block;
+    margin-left: -27px;
+    width: 50%;
+}
+
+footer {
+    background-color: var(--cor1);
+}
+
+.neg {
+    font-weight: bolder;
+}
+
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+
