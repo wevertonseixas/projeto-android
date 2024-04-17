@@ -12,7 +12,7 @@
     --cor4: rgb(128, 237, 153);
     --cor5: rgb(199, 249, 204);
 
-    --fonte-tit: 'Bebas Neue', cursive;
+    --fonte-tit: 'Bebas Neue';
     --fonte-droid:'idroid', sans-serif;
 }
 
@@ -21,13 +21,16 @@ body {
     background-color: var(--cor5);
 }
 header {
-    height: 200px;
+    padding-top: 20px;
+    min-height: 180px;
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor1) 82%);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
 }
 
 header > h1 {
-    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
     margin: auto;
     color: white;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
@@ -40,6 +43,7 @@ header > h1 {
 header > p {
     padding: 5px;
     margin: auto;
+    padding-bottom: 30px;
     max-width: 400px;
     color: white;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
@@ -48,7 +52,8 @@ header > p {
 }
 
 #navheader {
-    margin-top: 35px;
+    padding-bottom: 10px;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
